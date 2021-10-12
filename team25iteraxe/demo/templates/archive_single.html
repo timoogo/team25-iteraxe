@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block single %}
+<h2>
+  Prénom: {{ subject.first_name }}
+</h2>
+<h2>
+ Nom:  {{ subject.name }}
+</h2>
+
+<h2>
+Matricule:   {{ subject.matricule }}
+</h2>
+<h2>
+Description:   {{ subject.description }}
+</h2>
+<h2>
+State:   {% if subject.is_dead %}
+Mort
+{% else %}
+Vivant
+{% endif %}
+</h2>
+    <a href="{% url 'index' %}">retour a la liste   </a>
+{% endblock %}
