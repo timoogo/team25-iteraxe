@@ -20,4 +20,4 @@ class Subject(models.Model):
         self.save()
 
     def __str__(self):
-        return f'Matricule :{self.matricule} - {self.first_name, self.name} '
+        return f'Matricule:{self.matricule}, Name: {self.first_name, self.name} '
