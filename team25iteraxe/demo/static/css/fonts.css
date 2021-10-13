@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'MonumentExtended-Bold';
+    src: url('../fonts/MonumentExtended-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MonumentExtended-Regular';
+    src: url('../fonts/MonumentExtended-Regular.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'MonumentExtended-Black';
+    src: url('../fonts/MonumentExtended-Black.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'MonumentExtended-Light';
+    src: url('../fonts/MonumentExtended-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'MonumentExtended-Thin';
+    src: url('../fonts/MonumentExtended-Thin.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+
+}
