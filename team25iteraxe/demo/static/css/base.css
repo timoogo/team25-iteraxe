@@ -1,0 +1,16 @@
+.logo{
+    display: flex;
+}
+.logoviral{
+    display: flex;
+    justify-content: space-between;
+}
+.cutsections{
+    display: flex;
+}
+.cutsections section {
+    width: 50%;
+}
+.darkmode{
+    background-color: #252525;
+}

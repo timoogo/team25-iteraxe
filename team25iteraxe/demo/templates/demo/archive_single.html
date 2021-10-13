@@ -1,24 +1,49 @@
 {% extends 'base.html' %}
-{% block single %}
-<h2>
-  Prénom: {{ subject.first_name }}
-</h2>
-<h2>
- Nom:  {{ subject.name }}
-</h2>
+{% load static %}
+{% block title %}Archive{% endblock %}
+{% block body %}
 
-<h2>
-Matricule:   {{ subject.matricule }}
-</h2>
-<h2>
-Description:   {{ subject.description }}
-</h2>
-<h2>
-State:   {% if subject.is_dead %}
-Mort
-{% else %}
-Vivant
-{% endif %}
-</h2>
-    <a href="{% url 'index' %}">retour a la liste   </a>
-{% endblock %}
+<body class="darkmode">
+  {% endblock %}
+  {% block header %}
+  <header>
+    <nav>
+      <div class="logoviral">
+        <img src="{% static 'img/logoviral.svg' %}" alt="logoviral">
+        <a href="{% url 'index' %}">Archives</a>
+      </div>
+    </nav>
+  </header>
+  {% endblock %}
+  {% block single %}
+  <div class="cutsections">
+    <section>
+
+    </section>
+    <section>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+      <h2>
+        Prénom: {{ subject.first_name }}
+      </h2>
+      <h2>
+        Nom: {{ subject.name }}
+      </h2>
+
+      <h2>
+        Matricule: {{ subject.matricule }}
+      </h2>
+      <h2>
+        Description: {{ subject.description }}
+      </h2>
+      <h2>
+        State: {% if subject.is_dead %}
+        Mort
+        {% else %}
+        Vivant
+        {% endif %}
+      </h2>
+    </section>
+  </div>
+
+
+  {% endblock %}

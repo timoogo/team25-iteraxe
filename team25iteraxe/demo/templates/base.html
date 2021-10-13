@@ -1,16 +1,24 @@
 {% load static %}
 
 <head>
-    <title>Timogo's blog</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+    <title>{% block title %}Asclepius{% endblock %}</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'css/style.css' %} ">
 
 </head>
+{% block body %}
 <body>
+{% endblock %}
+{% block header %}
 <header>
     <nav>
-
+        <div class="logo">
+            <img src="{% static 'img/logolab.svg' %}" alt="logolab">
+            <h1>Asclepius</h1>
+        </div>
     </nav>
 </header>
+{% endblock %}
+{% block connexion %}{% endblock %}
  {% block list %}{% endblock %}
  {% block single %}{% endblock %}
 <footer></footer>
