@@ -3,6 +3,7 @@
 {% block title %}Archive{% endblock %}
 {% block body %}
 
+<<<<<<< HEAD:team25iteraxe/demo/templates/demo/archive_single.html
 <body class="darkmode">
   {% endblock %}
   {% block header %}
@@ -47,3 +48,20 @@
 
 
   {% endblock %}
+=======
+<h2>
+Matricule:   {{ subject.matricule }}
+</h2>
+<h2>
+Description:   {{ subject.description }}
+</h2>
+<h2>
+State:   {% if subject.is_dead %}
+Mort
+{% else %}
+Vivant
+{% endif %}
+</h2>
+    <a href="{% url 'archive' %}">retour a la liste   </a>
+{% endblock %}
+>>>>>>> 95aec470a6a23126d1cde7c373cb0d259b0eb673:team25iteraxe/demo/templates/demo/archive/archive_single.html
