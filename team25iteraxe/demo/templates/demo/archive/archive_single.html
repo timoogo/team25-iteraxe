@@ -10,38 +10,52 @@
     <nav>
       <div class="logoviral">
         <img src="{% static 'img/logoviral.svg' %}" alt="logoviral">
-        <a href="{% url 'home' %}">Archives</a>
+        <div>
+          <a class="archiveslink" href="{% url 'home' %}">>Archives</a>
+          <p>>{{ subject.matricule }}</p>
+        </div>
+        
       </div>
     </nav>
   </header>
   {% endblock %}
   {% block single %}
   <div class="cutsections">
-    <section>
-
+    <section class="description">
+      <h2>
+        {{ subject.description }}
+      </h2>
     </section>
     <section>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
-      <h2>
-        Prénom: {{ subject.first_name }}
-      </h2>
-      <h2>
-        Nom: {{ subject.name }}
-      </h2>
+      <div class="portrait">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+      </div>
+      <div class="informations">
+        <h2>
+          >Matricule: {{ subject.matricule }}
+        </h2>
+        <h2>
+          >Nom: {{ subject.name }}
+        </h2>
+        <h2>
+          >Prénom: {{ subject.first_name }}
+        </h2>
+        <h2>
+          >Virus: #
+        </h2>
+        <h2>
+          >Vaccin utilisé: #
+        </h2>
+        <h2>
+          >State: {% if subject.is_dead %}
+          Mort
+          {% else %}
+          Vivant
+          {% endif %}
+        </h2>
 
-      <h2>
-        Matricule: {{ subject.matricule }}
-      </h2>
-      <h2>
-        Description: {{ subject.description }}
-      </h2>
-      <h2>
-        State: {% if subject.is_dead %}
-        Mort
-        {% else %}
-        Vivant
-        {% endif %}
-      </h2>
+      </div>
+
     </section>
   </div>
 
