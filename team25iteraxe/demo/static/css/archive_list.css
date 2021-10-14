@@ -1,0 +1,32 @@
+.subject_list{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.listsubject{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+.listsubject img{
+    width: 100px;
+    border-radius: 50%;
+}
+.listsubject div{
+    margin: auto;
+    text-align: center;
+}
+.listsubject div a{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family: "MonumentExtended-Thin", "serif";
+    font-size: 30px;
+}
+.listsubject div p{
+    color: #FF0000;
+    opacity: 0.6;
+}

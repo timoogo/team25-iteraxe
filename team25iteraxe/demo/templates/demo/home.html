@@ -28,7 +28,7 @@
             <div class="button">
                 <h3>Contact</h3>
                 <h3>Participer aux expériences</h3>
-                <h3 class="buton"><a href="{% url 'login' %}">Se connecter </a></h3>
+                <h3 class="buton"><a href="{% url 'login' %}">Connexion </a></h3>
             </div>
         </section>
         
@@ -36,13 +36,26 @@
     </header>
     {% endblock %}
     {% block home %}
-    <section class="imgbody">
-
-    </section>
-    <section class="imgbody2">
-
-    </section>
+    <img class="imgbody" src="{% static 'img/bggame.svg' %}" alt="123">
+        <section class="landingcta">
+            <h2>Bienvenue sur la plateforme ASCLEPIUS</h2>
+            <article>
+                <div>
+                    <img src="{% static 'img/icons/science.png' %}" alt="science">
+                    <p>Science</p>
+                </div>
+                <div>
+                    <img src="{% static 'img/icons/futur.png' %}" alt="future">
+                    <p>Future</p>
+                </div>
+                <div>
+                    <img src="{% static 'img/icons/method.png' %}" alt="methode">
+                    <p>Methode</p>
+                </div>
+            </article>
+        </section>
     <section class="transition">
+        <p>Découvrez notre nouveau vaccin: Extasus</p>
         <marquee scrollamount="10">
             <b>Extasus</b>
         </marquee>

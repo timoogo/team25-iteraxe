@@ -1,0 +1,74 @@
+.logo{
+    display: flex;
+}
+.logoviral{
+    display: flex;
+    justify-content: space-between;
+}
+.logoviral div{
+    display: flex;
+}
+.archiveslink, .logoviral div p{
+    margin: auto 10px;
+    text-decoration: none;
+    color: #FF0000;
+    opacity: 0.6;
+    font-family: "MonumentExtended-Thin", "serif";
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.archiveslink:hover{
+    opacity: 1;
+}
+.logoviral div p{
+    opacity: 1;
+    text-decoration: underline;
+}
+.logoviral div p:hover{
+    cursor: pointer;
+}
+.cutsections{
+    display: flex;
+}
+.cutsections section {
+    width: 50%;
+}
+.description{
+    display: flex;
+}
+.description h2{
+    margin: 15% 10% auto 10%;
+    justify-content: center;
+    color: #FF0000;
+    font-family: "MonumentExtended-Thin", "serif";
+}
+.portrait img {
+    width: 100%;
+    object-fit: scale-down;
+}
+.portrait{
+    
+    margin: auto;
+    border: solid 3px #FF0000;
+    border-radius: 10%;
+    max-height:50%;
+    max-width: 50%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+}
+.informations{
+    padding: 20px 0 20px 0;
+    margin: auto;
+    margin-top: 5%;
+    border: solid 3px #FF0000;
+    border-radius: 10% 0 10% 0;
+    width: 70%;
+}
+.informations h2{
+    margin: 0 0 0 50px;
+    color: white;
+    font-family: "MonumentExtended-Thin", "serif";
+}
+.darkmode{
+    background-color: #252525;
+}

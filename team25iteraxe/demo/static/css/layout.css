@@ -1,0 +1,24 @@
+.landingcta{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landingcta h2{
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    
+}
+.landingcta article{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.landingcta article div>img{
+    width: 10vw;
+
+}
