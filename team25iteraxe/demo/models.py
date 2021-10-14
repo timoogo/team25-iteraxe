@@ -5,6 +5,10 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib.auth.models import User
 
 
+def user_directory_path(instance, filename):
+    # file will be uploaded to MEDIA_ROOT / user_<id>/<filename>
+    return f'subjects_images/user_{instance.matricule}/{filename}'
+
 # Create your models here.
 class Subject(models.Model):
     first_name = models.CharField(max_length=200, default=None, null=None)
@@ -13,7 +17,7 @@ class Subject(models.Model):
     description = models.CharField(max_length=3000, null=True)
     first_day = models.DateTimeField(default=timezone.now)
     state = models.IntegerField(validators=[MinValueValidator(-1), MaxValueValidator(1)], default=0)
-    image = models.ImageField(upload_to='subjects_images', default=None, null=None)
+    image = models.ImageField(upload_to=user_directory_path, null=None)
     virus_name = models.CharField(max_length=200, default=None, null=None)
     cure = models.CharField(max_length=200, default=None, null=None)
 

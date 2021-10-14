@@ -73,7 +73,7 @@ TEMPLATES = [
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'demo/static')
-MEDIA_URL = 'subjects_images/'
+MEDIA_URL = '/'
 
 WSGI_APPLICATION = 'team25iteraxe.wsgi.application'
 
