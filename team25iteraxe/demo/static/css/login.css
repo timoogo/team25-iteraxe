@@ -1,0 +1,60 @@
+section.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+section.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45vw;
+    height: 45vh;
+    margin: auto;
+    background-color: rgba(0,0,0, .5);
+    border-radius: 1rem
+
+}
+section.login form > input{
+    background-color: transparent;
+    border-width: 1px;
+    height: 5vh;
+    margin: auto;
+    border-color: transparent transparent #4ac1f7 transparent ;
+    width: calc(100% - 1rem);
+    transition: 1s;
+      color: white;
+}
+
+section.login form > input:hover,
+section.login form > input:focus{
+      border-color: #4ac1f7 ;
+      color: white;
+}
+section.login form h2{
+    transform: translateY(-10vh);
+}
+section.login form h2, section.login form label{
+    color: white;
+    margin-left: 1rem;
+}
+section.login form li{
+    color: white;
+    list-style: none;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+section.login form button{
+    margin: auto 5% auto 5%;
+    color: #4ac1f7;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border-radius: 90px;
+    font-weight: bold;
+}
+section.login form a{
+    color: white;
+    display: block;
+    margin: auto;
+}

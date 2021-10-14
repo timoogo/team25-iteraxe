@@ -14,7 +14,7 @@
           <a class="archiveslink" href="{% url 'archive' %}">>Archives</a>
           <p>>{{ subject.matricule }}</p>
         </div>
-        
+
       </div>
     </nav>
   </header>
@@ -41,10 +41,10 @@
           >Prénom: {{ subject.first_name }}
         </h2>
         <h2>
-          >Virus: #
+          >Virus: {{ subject.virus_name }}
         </h2>
         <h2>
-          >Vaccin utilisé: #
+          >Vaccin utilisé: {{ cure }}
         </h2>
         <h2>
           >State: {% if subject.is_dead %}
