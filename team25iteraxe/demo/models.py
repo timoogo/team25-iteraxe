@@ -2,7 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 from django.core.validators import MaxValueValidator, MinValueValidator
-
+from django.contrib.auth.models import User
 
 
 # Create your models here.
@@ -18,7 +18,6 @@ class Subject(models.Model):
     cure = models.CharField(max_length=200, default=None, null=None)
 
 
-
     def publish(self):
         self.published_date = timezone.now()
         self.save()
@@ -26,3 +25,6 @@ class Subject(models.Model):
     def __str__(self):
         return f'Matricule:{self.matricule}, Name: {self.first_name, self.last_name} '
 
+class Guard(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    matricule = models.CharField(max_length=200, default="SDR", null=None)

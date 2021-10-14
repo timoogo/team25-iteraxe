@@ -22,6 +22,7 @@ def login(request):
     if user is not None:
         login(request, user)
         # Redirect to a success page.
-        return redirect('home')
+        print(request)
+        return redirect('archive')
     else:
-        return redirect('home')
+        return redirect('login')
