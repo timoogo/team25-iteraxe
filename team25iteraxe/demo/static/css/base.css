@@ -5,12 +5,106 @@
     display: flex;
     justify-content: space-between;
 }
+.logoviral div{
+    display: flex;
+}
+.archiveslink, .logoviral div p{
+    margin: auto 10px;
+    text-decoration: none;
+    color: #FF0000;
+    opacity: 0.6;
+    font-family: "MonumentExtended-Thin", "serif";
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.archiveslink:hover{
+    opacity: 1;
+}
+.logoviral div p{
+    opacity: 1;
+    text-decoration: underline;
+}
+.logoviral div p:hover{
+    cursor: pointer;
+}
 .cutsections{
     display: flex;
 }
 .cutsections section {
     width: 50%;
 }
+.description{
+    display: flex;
+}
+.description h2{
+    margin: auto 10% auto 10%;
+    justify-content: center;
+    color: #FF0000;
+    font-family: "MonumentExtended-Thin", "serif";
+}
+.portrait img {
+    width: 100%
+}
+.portrait{
+    margin: auto;
+    border: solid 3px #FF0000;
+    border-radius: 10%;
+    max-height:50%;
+    max-width: 50%;
+    overflow: hidden;
+}
+.informations{
+    padding: 20px 0 20px 0;
+    margin: auto;
+    margin-top: 5%;
+    border: solid 3px #FF0000;
+    border-radius: 10% 0 10% 0;
+    width: 70%;
+}
+.informations h2{
+    margin: 0 0 0 50px;
+    color: white;
+    font-family: "MonumentExtended-Thin", "serif";
+}
 .darkmode{
     background-color: #252525;
+}
+
+/**/
+.subject_list{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.listsubject{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+.listsubject img{
+    width: 100px;
+    border-radius: 50%;
+}
+.listsubject div{
+    margin: auto;
+    text-align: center;
+}
+.listsubject div a{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family: "MonumentExtended-Thin", "serif";
+    font-size: 30px;
+}
+.listsubject div p{
+    color: #FF0000;
+    opacity: 0.6;
+}
+
+/**/
+.imgbody{
+    background-image: url('../img/bggame.svg');
 }

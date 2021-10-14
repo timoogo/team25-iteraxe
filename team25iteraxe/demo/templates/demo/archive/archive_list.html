@@ -1,11 +1,123 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block body %}
 
+<body class="darkmode">
+  {% endblock %}
+  {% block header %}
+  <header>
+    <nav>
+      <div class="logoviral">
+        <img src="{% static 'img/logoviral.svg' %}" alt="logoviral">
+        <div>
+          <p>Archives</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+  {% endblock %}
 {% block list %}
     <section class="subject_list">
 
     {% for subject in subject_list %}
-        <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}2</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+    <div class="listsubject">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+        <div>
+            <p>{{ subject.matricule }}</p>
+            <a href="{% url 'details' pk=subject.pk %}">{{ subject.first_name }}</a>
+        </div>
+        
+    </div>
+
+
     {% endfor %}
 
     </section>

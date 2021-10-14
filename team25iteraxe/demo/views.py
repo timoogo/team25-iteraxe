@@ -7,7 +7,7 @@ def home(request):
 
 def archive(request): # list
     subject_list = Subject.objects.all()
-    return render(request, 'demo/archive/archive_list.html', {'subject_list': subject_list})
+    return render(request, 'demo/archive/archive_list.html', {'subject_list': subject_list, 'numbers':range(4)})
 
 
 def subject_detail(request, pk):
