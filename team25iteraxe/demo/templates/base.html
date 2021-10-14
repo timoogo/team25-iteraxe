@@ -6,21 +6,36 @@
 
 </head>
 {% block body %}
-<body>
-{% endblock %}
-{% block header %}
-<header>
+ {% if user.is_authenticated %}
+<body class="darkmode">
+<div class="logo">
+    <img src="{% static 'img/logoviral.svg' %}"/>
+    <h1>Projet Viral</h1>
+</div>
     <nav>
-        <div class="logo">
-            <img src="{% static 'img/logolab.svg' %}" alt="logolab">
-            <h1>Asclepius</h1>
-        </div>
+        <ul>
+          <li>User: {{ user.get_username }}</li>
+            <li><a href="{% url 'archive' %}">Voir les Archives </a></li>
+            <li><a href="{% url 'logout' %}">logout </a></li>
+        </ul>
     </nav>
-</header>
+</body>
+{%  else %}
+     <body>
+     <div class="logo">
+    <img src="{% static 'img/logolab.svg' %}"/>
+    <h1>Projet Viral</h1>
+</div>
+      <nav>
+        <ul>
+            <li><a href="{% url 'login' %}">Se connecter </a></li>
+        </ul>
+    </nav>
+     </body>
+{%  endif %}
 {% endblock %}
 {% block connexion %}{% endblock %}
  {% block home %}{% endblock %}
  {% block list %}{% endblock %}
  {% block single %}{% endblock %}
 <footer></footer>
-</body>
