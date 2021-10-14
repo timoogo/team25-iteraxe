@@ -24,6 +24,9 @@
     opacity: 1;
     text-decoration: underline;
 }
+.logoviral div p:hover{
+    cursor: pointer;
+}
 .cutsections{
     display: flex;
 }
@@ -68,14 +71,40 @@
 }
 
 /**/
-.listsubject{
+.subject_list{
+    height: 100%;
     display: flex;
-    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.listsubject{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
 }
 .listsubject img{
     width: 100px;
     border-radius: 50%;
 }
-.listsubject a{
+.listsubject div{
     margin: auto;
+    text-align: center;
+}
+.listsubject div a{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family: "MonumentExtended-Thin", "serif";
+    font-size: 30px;
+}
+.listsubject div p{
+    color: #FF0000;
+    opacity: 0.6;
+}
+
+/**/
+.imgbody{
+    background-image: url('../img/bggame.svg');
 }
