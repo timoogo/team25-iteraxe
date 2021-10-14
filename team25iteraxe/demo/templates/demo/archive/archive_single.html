@@ -21,7 +21,7 @@
 
     </section>
     <section>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="empty portrait">
+      <img src="{% static 'img/subjects_images' %}{{ subject.id - 1 }}" alt="empty portrait">
       <h2>
         Prénom: {{ subject.first_name }}
       </h2>
@@ -30,7 +30,7 @@
       </h2>
 
       <h2>
-        Matricule: {{ subject.matricule }}
+        Matricule: {{ subject.matricule }} -Id {{ subject.id }}
       </h2>
       <h2>
         Description: {{ subject.description }}

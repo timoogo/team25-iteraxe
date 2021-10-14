@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'demo.apps.DemoConfig',
     'crispy_forms',
+    'django_truncate',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -70,6 +71,9 @@ TEMPLATES = [
         },
     },
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'demo/static')
+MEDIA_URL = 'subjects_images/'
 
 WSGI_APPLICATION = 'team25iteraxe.wsgi.application'
 
