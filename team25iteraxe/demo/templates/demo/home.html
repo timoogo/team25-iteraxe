@@ -1,42 +1,50 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block body %}
-<body class="imgbody">
-{% endblock %}
 
-{% block header %}
-<header>
-{% if user.is_authenticated %}
-<div class="logo">
-    <img src="{% static 'img/logoviral.svg' %}"/>
-    <h1>Projet Viral</h1>
-</div>
-    <nav>
-        <ul>
-          <li>User: {{ user.get_username }}</li>
-            <li><a href="{% url 'archive' %}">Voir les Archives </a></li>
-            <li><a href="{% url 'logout' %}">logout </a></li>
-        </ul>
-    </nav>
-{%  else %}
-     <div class="logo">
-    <img src="{% static 'img/logolab.svg' %}"/>
-    <h1>Asclepius</h1>
-</div>
-      <nav>
-        <ul>
-            <li><a href="{% url 'login' %}">Se connecter </a></li>
-        </ul>
-    </nav>
+<body>
+    {% endblock %}
 
-{%  endif %}
-</header>
-{% endblock %}
-{% block home %}
-<section class="section1">
-    
-</section>
-<marquee scrollamount="10">
-<b>Extasus</b>
-</marquee>
-{% endblock %}
+    {% block header %}
+    <header>
+        {% if user.is_authenticated %}
+        <div class="logo">
+            <img src="{% static 'img/logoviral.svg' %}" />
+            <h1>Projet Viral</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>User: {{ user.get_username }}</li>
+                <li><a href="{% url 'archive' %}">Voir les Archives </a></li>
+                <li><a href="{% url 'logout' %}">logout </a></li>
+            </ul>
+        </nav>
+        {% else %}
+        <section class="nav">
+            <div class="logo">
+                <img src="{% static 'img/logolab.svg' %}" />
+                <h1 class="h1">Asclepius</h1>
+            </div>
+            <div class="button">
+                <h3>Contact</h3>
+                <h3>Participer aux expériences</h3>
+                <h3 class="buton"><a href="{% url 'login' %}">Se connecter </a></h3>
+            </div>
+        </section>
+        
+        {% endif %}
+    </header>
+    {% endblock %}
+    {% block home %}
+    <section class="imgbody">
+
+    </section>
+    <section class="imgbody2">
+
+    </section>
+    <section class="transition">
+        <marquee scrollamount="10">
+            <b>Extasus</b>
+        </marquee>
+    </section>
+    {% endblock %}

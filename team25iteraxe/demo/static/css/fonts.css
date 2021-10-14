@@ -37,7 +37,7 @@
 
 @font-face {
     font-family: 'MonumentExtended-Thin';
-    src: url('../fonts/MonumentExtended-Thin.ttf') format('ttf');
+    src:local('MonumentExtended') url('../fonts/MonumentExtended-Thin.ttf') format('ttf');
     font-weight: 100;
     font-style: normal;
 
